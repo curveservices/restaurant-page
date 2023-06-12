@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Marker+Hatch&display=swap');
 
 :root {
-    --oposite-color: #006eb8a9;
+    --oposite-color: #006eb8c9;
     --button-color: #ff9147;
     --background-color: #fff0db; 
     --text-shadow:  0.1em 0.1em 0.2em rgba(0,0,0,0.5);
@@ -93,7 +93,7 @@ header {
 
 .home-image {
     width: 90vw;
-    height: 80vw;
+    height: 90vh;
     align-self: center;
     border-radius: 50px;
     border: var(--button-color) solid 0.5rem;
@@ -103,30 +103,66 @@ header {
     background-color: var(--button-color);
     border-radius: 50px;
     font-weight: 900;
-    color: #000;
+    color: #fff;
 }
 
 .menu-container {
     background-color: var(--button-color);
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 1rem 0rem;
+}
+
+.contact-header {
+    margin-top: 1rem;
+    color: #fff;
+    background: var(--button-color);
+}
+
+.contact-container,
+.contacts {
+    color: white;
+    background: var(--button-color);
+    border-radius: 10px;
+}
+
+.contact-container {
+    
+    margin-top: 5rem;
+    padding: 1em;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding-left: 2em;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    margin-top: 5rem;
 }
 
 input {
     background: linear-gradient(180deg, #ffffff, #ffe4be);
-    width: 35rem;
+    width: 40rem;
     border-radius: 10px;
     text-transform: uppercase;
     padding-left: 0.5rem;
     font-weight: 900;
+}
 
+.times-container {
+    display: flex;
+    background: var(--button-color);
+    justify-content: center;
+}
+
+#day-time {
+    background: var(--button-color);
+    color: var(--oposite-color);
+}
+a {
+    color: var(--oposite-color)
 }
 
 .footer {
@@ -144,7 +180,7 @@ input {
 .footer-link,
 a {
     font-family: 'Rock Salt', cursive;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--background)
 }
  
@@ -168,12 +204,11 @@ a {
     font-size: 8px;
     width: 100%;
 }
-
-.footer-link,
-a {
+a,
+.footer-link {
     font-family: 'Rock Salt', cursive;
     text-decoration: none;
-    
+    color: var(--oposite-color);
 }
  
 .bi-github{
@@ -238,7 +273,7 @@ a {
     .footer-link,
     .footer-link:visited,
     .footer-link:link {
-        text-decoration: none;
+        /* text-decoration: none; */
         text-shadow: var(--text-shadow);
         transition: all 0.2s ease-out;
     }
