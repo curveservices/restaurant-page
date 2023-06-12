@@ -2,18 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Marker+Hatch&display=swap');
 
 :root {
-    --background-color: #50aa01;
-    --button-color: #C27CFF;
+    --oposite-color: #006eb8a9;
+    --button-color: #ff9147;
+    --background-color: #fff0db; 
     --text-shadow:  0.1em 0.1em 0.2em rgba(0,0,0,0.5);
 }
 
 *,
 *::after,
 *::before { 
-    color: white;
+    color: var(--button-color);
     box-sizing: border-box;
     font-family: 'Rock Salt', sans-serif;
-    background-color: black;
+    background-color: var(--background-color);
     margin: 10px;
     letter-spacing: 4px;
 }
@@ -48,9 +49,9 @@ header {
     margin-top: 0.75rem;
     height: 100px;
     width: 100px;
+    border: solid 1px #000;
     border-radius: 10%;
     align-items: center;
-    border: solid 2px var(--button-color);
     transition: transform 0.1s ease-in-out;
 }
 
@@ -61,7 +62,7 @@ header {
 }
 
 #logo:active {
-    box-shadow: inset 0px 1px 4px 1px white;
+    box-shadow: inset 0px 1px 4px 1px #000;
 }
 
 .navigation {
@@ -75,20 +76,19 @@ header {
     width: 7.25rem;
     height: 3.5rem;
     border-radius: 50px;
-    background-color: var(--background-color);
+    background-color: var(--button-color);
     color: white;
     border: black solid;
 }
 
 .tab:hover {
-    background-color: var(--button-color);
+    background-color: var(--oposite-color);
     box-shadow: 2px 2px 2px 0px #000;
-    transform: scale(1.1);
-    background-color: var(--button-color);
+    transform: scale(1.1);;
 }
 
 .tab:active {
-    box-shadow: inset 0px 1px 4px 1px #fff;
+    box-shadow: inset 0px 1px 4px 1px #000;
 }
 
 .home-image {
@@ -96,7 +96,7 @@ header {
     height: 80vw;
     align-self: center;
     border-radius: 50px;
-    border: #C27CFF solid 0.5rem;
+    border: var(--button-color) solid 0.5rem;
 }
 
 .item {
@@ -107,7 +107,7 @@ header {
 }
 
 .menu-container {
-    background-color: #C27CFF;
+    background-color: var(--button-color);
     border-radius: 50px;
     padding: 1rem 0rem;
 }
@@ -115,10 +115,18 @@ header {
 .contact-form {
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    padding-left: 2em;
 }
 
 input {
-    width: 20rem;
+    background: linear-gradient(180deg, #ffffff, #ffe4be);
+    width: 35rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+    font-weight: 900;
+
 }
 
 .footer {
@@ -149,6 +157,7 @@ a {
 }
 
 .footer {
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +216,7 @@ a {
     }
 
     .menu-container {
-        background-color: #C27CFF;
+        background-color: var(--button-color);
         border-radius: 50px;
         width: 90vw;
         margin-top: 5rem;
@@ -238,21 +247,22 @@ a {
     .footer-link:focus, 
     .footer-link:active {
         text-decoration: underline;
-        text-shadow: 0 0 0.2em #fff;
+        text-shadow: 0 0 0.2em #000;
     }
      
     .bi-github {
         display: flex;
         justify-items: center;
+        border-radius: 50px;
         margin: 0; 
         font-size: 1.5rem;
         transition: all 0.3s ease-out;
-        filter: drop-shadow(0.15em 0.15em, 0.15em #000)
+        filter: drop-shadow(0.15em 0.15em, 0.15em var(--button-color))
     }
 
     .bi-github:hover,
     .bi-github:focus {
         transform: rotate(720deg) scale(1.2);
-        filter: drop-shadow(0 0 0.3em #fff);
+        filter: drop-shadow(0 0 0.3em var(--button-color));
     }
 }
