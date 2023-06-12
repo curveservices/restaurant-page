@@ -7,9 +7,9 @@ const createRestaurantHomePage = () => {
 
     // create headline h1 & append
     const headline = document.createElement('h1');
-    headline.textContent = 'VE-GAN CLAN';
+    headline.textContent = 'NEW CROSS BUNS';
     const strap = document.createElement('h2');
-    strap.textContent = 'Home of plant based burgers'
+    strap.textContent = 'South-east London\'s top bakery'
     pageContent.appendChild(headline);
     pageContent.appendChild(strap);
 
@@ -24,7 +24,7 @@ const createRestaurantHomePage = () => {
 
     //create copy & append
     const copy = document.createElement('h3')
-    copy.textContent = 'Serving the best food in town, come and have a look';
+    copy.textContent = 'Serving the sweetest baked goods to New Cross and surrounding South East London post codes, come and have a look';
     pageContent.appendChild(copy);
 
     content.appendChild(pageContent);
