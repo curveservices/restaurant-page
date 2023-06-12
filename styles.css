@@ -112,6 +112,15 @@ header {
     padding: 1rem 0rem;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 20rem;
+}
+
 .footer {
     display: flex;
     justify-content: center;
