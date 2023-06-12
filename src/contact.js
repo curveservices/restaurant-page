@@ -60,7 +60,7 @@ const sep = document.createTextNode(' / ');
 
     const emailInput = document.createElement('input');
     emailInput.type = 'email';
-    emailInput.placeholder = 'you@exmple.com';
+    emailInput.placeholder = 'you@example.com';
 
     const phoneInput = document.createElement('input');
     phoneInput.type = 'text';
