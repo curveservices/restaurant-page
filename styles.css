@@ -13,9 +13,8 @@
 *::before { 
     color: var(--button-color);
     box-sizing: border-box;
-    font-family: 'Rock Salt', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: var(--background-color);
-    margin: 10px;
     letter-spacing: 4px;
 }
 
@@ -43,16 +42,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0.5em;
 }
 
 #logo {
-    margin-top: 0.75rem;
-    height: 100px;
-    width: 100px;
+    height: 55px;
+    width: 55px;
     border: solid 1px #000;
-    border-radius: 10%;
+    border-radius: 50%;
     align-items: center;
     transition: transform 0.1s ease-in-out;
+    margin: 0.5rem 0rem;
 }
 
 #logo:hover {
@@ -68,87 +68,99 @@ header {
 .navigation {
     display: flex;
     align-items: center;
-    margin: 1.5rem 0rem;
     gap: 0.5rem;
 }
 
 .tab {
-    width: 7.25rem;
-    height: 3.5rem;
+    width: 6.55rem;
+    height: 2rem;
     border-radius: 50px;
     background-color: var(--button-color);
     color: white;
-    border: black solid;
+    border: black solid 1px;
 }
 
 .tab:hover {
     background-color: var(--oposite-color);
     box-shadow: 2px 2px 2px 0px #000;
-    transform: scale(1.1);;
+    transform: scale(1.1);
 }
 
 .tab:active {
     box-shadow: inset 0px 1px 4px 1px #000;
 }
 
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .home-image {
     width: 90vw;
-    height: 90vh;
-    align-self: center;
+    height: 30vh;
+    align-items: center;
     border-radius: 50px;
-    border: var(--button-color) solid 0.5rem;
+    border: var(--button-color) solid 0.75rem;
+}
+
+.title {
+    margin: 0.1em;
+    padding: 0.2em;
 }
 
 .item {
     background-color: var(--button-color);
     border-radius: 50px;
-    font-weight: 900;
     color: #fff;
 }
 
 .menu-container {
     background-color: var(--button-color);
     border-radius: 10px;
-    padding: 1rem 0rem;
+    padding: 1rem;
+}
+
+.food-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
 .contact-header {
-    margin-top: 1rem;
+    margin: 0.5rem;
     color: #fff;
     background: var(--button-color);
 }
 
-.contact-container,
-.contacts {
+.contact-container {
+    display: flex;
+    flex-direction: column;
     color: white;
     background: var(--button-color);
-    border-radius: 10px;
+    padding: 1rem 4rem;
 }
 
-.contact-container {
-    
-    margin-top: 5rem;
-    padding: 1em;
+.contacts {
+    color: #fff;
+    background: var(--button-color);
+    padding: 0em;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    padding: 2rem;
+    padding: 1.5rem 4rem;
     background-color: var(--button-color);
     border-radius: 10px;
-    margin-top: 5rem;
+    margin: 1.5rem;
 }
 
 input {
     background: linear-gradient(180deg, #ffffff, #ffe4be);
-    width: 40rem;
+    width: 12rem;
     border-radius: 10px;
     text-transform: uppercase;
-    padding-left: 0.5rem;
-    font-weight: 900;
+    padding: 0.5rem;
+    font-size: 10px;
 }
 
 .times-container {
@@ -161,6 +173,7 @@ input {
     background: var(--button-color);
     color: var(--oposite-color);
 }
+
 a {
     color: var(--oposite-color)
 }
@@ -189,7 +202,6 @@ a {
     justify-items: center;
     margin: 0px; 
     font-size: 18px;
-    
 }
 
 .footer {
@@ -225,36 +237,50 @@ a,
 @media only screen and (min-width: 500px) {
 
     .navigation {
-        margin: 0.75rem 5rem 2rem 5rem;
         gap: 2rem;
     }
 
     .tab {
-        width: 11rem;
-        height: 3.25rem;
+        width: 10rem;
+        height: 2.50rem;
         font-size: 20px;
-        margin-bottom: -2rem;
+        /* margin-bottom: -2rem; */
     }
 
     #logo {
-        height: 100px;
-        width: 140px;
-        margin: 1.5rem;
+        height: 75px;
+        width: 75px;
+        margin: 0.75rem;
     }
 
     .home-image {
-        width: 79.5;
+        width: 71vw;
+        height: 50vh;
     }
 
     .item {
-        padding: 1rem;
+        padding: 0.25rem;
     }
 
     .menu-container {
         background-color: var(--button-color);
         border-radius: 50px;
         width: 90vw;
-        margin-top: 5rem;
+        margin-top: 1rem;
+    }
+
+    .contact-container {
+        width: 75vw;
+        border-radius: 10px;
+    }
+
+    .contact-form {
+        width: 75vw;
+        border-radius: 10px;
+    }
+
+    input {
+        width: 30rem;
     }
 
     .footer {
@@ -288,7 +314,7 @@ a,
     .bi-github {
         display: flex;
         justify-items: center;
-        border-radius: 50px;
+        border-radius: 50%;
         margin: 0; 
         font-size: 1.5rem;
         transition: all 0.3s ease-out;
