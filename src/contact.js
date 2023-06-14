@@ -24,7 +24,7 @@ const createContactPage = () => {
     const contactsListCall = document.createElement('h4');
     contactsListCall.classList.add('contacts');
     contactContainer.appendChild(contactsListCall);
-    const contactsListCallText = document.createTextNode('CALL US: ');
+    const contactsListCallText = document.createTextNode('CALL US:  ');
     contactsListCall.appendChild(contactsListCallText);
     const contactsListCallLink = document.createElement('a');
     contactsListCallLink.classList.add('contacts');
@@ -36,7 +36,7 @@ const createContactPage = () => {
     const contactsListFollow = document.createElement('h4');
     contactContainer.appendChild(contactsListFollow);
     contactsListFollow.classList.add('contacts');
-    const contactsListFollowText = document.createTextNode('FOLLOW US: ');
+    const contactsListFollowText = document.createTextNode('FOLLOW US:  ');
     contactsListFollow.appendChild(contactsListFollowText);
 // Follow us Insta
     const contactsListFollowInsta = document.createElement('a');
@@ -86,26 +86,30 @@ const createContactPage = () => {
     const form = document.createElement('form');
     form.classList.add('contact-form');
 
-    const formHeader = document.createElement('h1');
+    const formHeader = document.createElement('h2');
     formHeader.classList.add('contact-header');
     formHeader.textContent = 'CONTACT US!'
 
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
-    nameInput.placeholder = 'Enter your full name';
+    nameInput.placeholder = 'Your full name';
+    nameInput.classList.add('input');
     
 
     const emailInput = document.createElement('input');
     emailInput.type = 'email';
     emailInput.placeholder = 'you@example.com';
+    emailInput.classList.add('input');
 
     const phoneInput = document.createElement('input');
     phoneInput.type = 'text';
-    phoneInput.placeholder = 'Enter your phone number';
+    phoneInput.placeholder = 'Your phone number';
+    phoneInput.classList.add('input');
     
 
     const submitButton = document.createElement('input');
     submitButton.setAttribute('id', 'submit');
+    submitButton.classList.add('input');
     submitButton.type = 'submit';
     submitButton.value = 'submit';
 
