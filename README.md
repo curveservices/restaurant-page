@@ -1,6 +1,6 @@
 # Project: Restaurant Page
 
-## Live Demo 👉 <a href="">Restaurant Page</a>
+## Live Demo 👉 <a href="https://curveservices.github.io/restaurant-page/">Restaurant Page</a>
 
 ## PC View 👇
 <img width="778" alt="Screenshot 2023-06-14 at 17 43 45" src="https://github.com/curveservices/restaurant-page/assets/101556296/71d544dc-6601-4815-9900-b592021355d9">
