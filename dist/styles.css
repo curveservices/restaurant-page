@@ -17,6 +17,7 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     letter-spacing: 4px;
+    margin: 0;
 }
 
 body {
@@ -35,6 +36,9 @@ h2 {
     font-weight: 900;
 }
 
+p {
+    font-size: small;
+}
 
 #content {
     display: flex;
@@ -44,9 +48,10 @@ h2 {
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    margin: 0.5em;
+    padding: 0 8em;
+    width: 100%;
 }
 
 #logo {
@@ -56,7 +61,6 @@ header {
     border-radius: 50%;
     align-items: center;
     transition: transform 0.1s ease-in-out;
-    margin: 0.5rem 0rem;
 }
 
 #logo:hover {
@@ -71,17 +75,18 @@ header {
 
 .navigation {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 .tab {
-    width: 6.55rem;
-    height: 2rem;
+    width: auto;
+    height: inherit;
     border-radius: 50px;
     background-color: var(--button-color);
     color: white;
     border: black solid 1px;
+    cursor: pointer;
 }
 
 .tab:hover {
@@ -101,11 +106,12 @@ header {
 }
 
 .home-image {
-    width: 90vw;
-    height: 30vh;
+    max-width: 75vw;
+    height: 75vw;
     align-items: center;
     border-radius: 50px;
     border: var(--button-color) solid 0.75rem;
+    margin: 1em auto;
 }
 
 .title {
@@ -120,15 +126,18 @@ header {
 }
 
 .menu-container {
+   
     background-color: var(--button-color);
     border-radius: 10px;
     padding: 1rem;
+    max-width: 50%;
 }
 
 .food-img {
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    margin: 1em auto;
 }
 
 .contact-header {
@@ -169,6 +178,7 @@ input {
     text-transform: uppercase;
     padding: 0.5rem;
     font-size: 10px;
+    cursor: pointer;
 }
 
 .times-container {
@@ -180,10 +190,6 @@ input {
 #day-time {
     background: var(--button-color);
     color: var(--oposite-color);
-}
-
-a {
-    color: var(--oposite-color)
 }
 
 .footer {
@@ -200,9 +206,9 @@ a {
 
 .footer-link,
 a {
-    font-family: 'Rock Salt', cursive;
-    /* text-decoration: none; */
+    text-decoration: none;
     color: black;
+    cursor: pointer;
 }
  
 .bi-github{
@@ -224,7 +230,7 @@ a {
     font-size: 8px;
     width: 100%;
 }
-a,
+
 .footer-link {
     font-family: 'Rock Salt', cursive;
     text-decoration: none;
@@ -243,6 +249,9 @@ a,
 
 @media only screen and (min-width: 500px) {
 
+    p {
+        font-size: inherit;
+    }
     .navigation {
         gap: 2rem;
     }
@@ -261,8 +270,8 @@ a,
     }
 
     .home-image {
-        width: 71vw;
-        height: 50vh;
+        width: 50vw;
+        height: auto;
     }
 
     .item {
@@ -274,6 +283,11 @@ a,
         border-radius: 50px;
         width: 90vw;
         margin-top: 1rem;
+    }
+
+    .food-img {
+        width: 300px;
+        height: 300px;
     }
 
     .contact-container {

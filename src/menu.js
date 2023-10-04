@@ -23,7 +23,6 @@ const createMenuPage = () => {
     const img1 = document.createElement('img');
     img1.src = './assets/IMG_3919.JPG';
     img1.classList.add('food-img');
-    const sep1 = document.createElement('hr');
 
     const menuItem2 = document.createElement('h3');
     menuItem2.textContent = 'BELGIAN BUN £4.95';
@@ -34,7 +33,6 @@ const createMenuPage = () => {
     const img2 = document.createElement('img');
     img2.src = './assets/IMG_4013.JPG';
     img2.classList.add('food-img');
-    const sep2 = document.createElement('hr');
 
     const menuItem3 = document.createElement('h3');
     menuItem3.textContent = 'NUTELLA KNOT £3.95';
@@ -45,7 +43,6 @@ const createMenuPage = () => {
     const img3 = document.createElement('img');
     img3.src = './assets/6D8820D8-0415-4225-84C2-068D990B397C.JPG';
     img3.classList.add('food-img');
-    const sep3 = document.createElement('hr');
 
     const menuItem4 = document.createElement('h3');
     menuItem4.textContent = 'CHELSEA BUN £3.95';
@@ -56,7 +53,6 @@ const createMenuPage = () => {
     const img4 = document.createElement('img');
     img4.src = './assets/59DE13A4-63F3-4FDA-AA8D-F13E2AF20F40.JPG';
     img4.classList.add('food-img');
-    const sep4 = document.createElement('hr');
 
     const menuItem5 = document.createElement('h3');
     menuItem5.textContent = '4 BRIOCHE ROLLS | £5.95 ';
@@ -72,22 +68,18 @@ const createMenuPage = () => {
     menuList.appendChild(menuItem1);
     menuItem1.appendChild(copy1);
     menuItem1.appendChild(img1);
-    menuItem1.appendChild(sep1);
     
     menuList.appendChild(menuItem2);
     menuItem2.appendChild(copy2);
     menuItem2.appendChild(img2);
-    menuList.appendChild(sep2);
 
     menuList.appendChild(menuItem3);
     menuItem3.appendChild(copy3);
     menuItem3.appendChild(img3);
-    menuList.appendChild(sep3);
 
     menuList.appendChild(menuItem4);
     menuItem4.appendChild(copy4);
     menuItem4.appendChild(img4);
-    menuList.appendChild(sep4);
 
     menuList.appendChild(menuItem5);
     menuItem5.appendChild(copy5);

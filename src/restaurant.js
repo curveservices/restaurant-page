@@ -26,7 +26,7 @@ const createRestaurantHomePage = () => {
 
     //create copy & append
     const copy = document.createElement('h3')
-    copy.textContent = 'Serving the sweetest baked goods to New Cross and surrounding South East London post codes, come and have a look';
+    copy.textContent = 'Serving New Cross and surrounding South East London areas';
     pageContent.appendChild(copy);
 
     content.appendChild(pageContent);
