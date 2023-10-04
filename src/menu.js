@@ -21,7 +21,7 @@ const createMenuPage = () => {
     copy1.classList.add('item');
     copy1.textContent = 'Vegan enriched cinemon bun with sweet vanillia icing';
     const img1 = document.createElement('img');
-    img1.setAttribute('src','file:///Users/paulrossiter/Documents/coding/repos/restaurant-page/assests/IMG_3919.JPG');
+    img1.src = './assets/IMG_3919.JPG';
     img1.classList.add('food-img');
     const sep1 = document.createElement('hr');
 
@@ -32,7 +32,7 @@ const createMenuPage = () => {
     copy2.classList.add('item');
     copy2.textContent = 'Vegan enriched dough filled with lemon curd & topped with sweet icing and a glace cherry';
     const img2 = document.createElement('img');
-    img2.setAttribute('src', 'file:///Users/paulrossiter/Documents/coding/repos/restaurant-page/assests/IMG_4013.JPG')
+    img2.src = './assets/IMG_4013.JPG';
     img2.classList.add('food-img');
     const sep2 = document.createElement('hr');
 
@@ -43,7 +43,7 @@ const createMenuPage = () => {
     copy3.classList.add('item');
     copy3.textContent = 'A Vegan enriched dough filled with Nutella, tied up & topped with more Nutella ';
     const img3 = document.createElement('img');
-    img3.setAttribute('src', 'file:///Users/paulrossiter/Documents/coding/repos/restaurant-page/assests/6D8820D8-0415-4225-84C2-068D990B397C.JPG');
+    img3.src = './assets/6D8820D8-0415-4225-84C2-068D990B397C.JPG';
     img3.classList.add('food-img');
     const sep3 = document.createElement('hr');
 
@@ -54,7 +54,7 @@ const createMenuPage = () => {
     copy4.classList.add('item')
     copy4.textContent = 'A Vegan enriched sweet & spicy bun, swirled with sultanas & currents';
     const img4 = document.createElement('img');
-    img4.setAttribute('src','file:///Users/paulrossiter/Documents/coding/repos/restaurant-page/assests/59DE13A4-63F3-4FDA-AA8D-F13E2AF20F40.JPG');
+    img4.src = './assets/59DE13A4-63F3-4FDA-AA8D-F13E2AF20F40.JPG';
     img4.classList.add('food-img');
     const sep4 = document.createElement('hr');
 
@@ -65,7 +65,7 @@ const createMenuPage = () => {
     copy5.classList.add('item');
     copy5.textContent = 'Vegan enriched brioche buns';
     const img5 = document.createElement('img');
-    img5.setAttribute('src','file:///Users/paulrossiter/Documents/coding/repos/restaurant-page/assests/58F931AD-564E-41A3-A7A8-63F2EEBA1EB8.JPG');
+    img5.src = './assets/58F931AD-564E-41A3-A7A8-63F2EEBA1EB8.JPG';
     img5.classList.add('food-img');
 
     // Append items

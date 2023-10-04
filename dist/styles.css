@@ -2,20 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Marker+Hatch&display=swap');
 
 :root {
-    --oposite-color: #006eb8c9;
+    --oposite-color: #002137ae;
     --button-color: #ff9147;
-    --background-color: #fff0db; 
+    --background-color: #666 radial-gradient(
+        #ff6600,
+        #8746009f);
     --text-shadow:  0.1em 0.1em 0.2em rgba(0,0,0,0.5);
 }
 
 *,
 *::after,
 *::before { 
-    color: var(--button-color);
+    color: white;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    background-color: var(--background-color);
     letter-spacing: 4px;
+}
+
+body {
+    background: var(--background-color);
 }
 
 h1,
@@ -35,7 +40,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; 
 }
 
 header {
@@ -148,6 +152,9 @@ header {
 }
 
 .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1.5rem 4rem;
     background-color: var(--button-color);
     border-radius: 10px;
@@ -156,6 +163,7 @@ header {
 
 input {
     background: linear-gradient(180deg, #ffffff, #ffe4be);
+    margin: 5px 0;
     width: 12rem;
     border-radius: 10px;
     text-transform: uppercase;
@@ -194,7 +202,7 @@ a {
 a {
     font-family: 'Rock Salt', cursive;
     /* text-decoration: none; */
-    color: var(--background)
+    color: black;
 }
  
 .bi-github{
@@ -220,7 +228,6 @@ a,
 .footer-link {
     font-family: 'Rock Salt', cursive;
     text-decoration: none;
-    color: var(--oposite-color);
 }
  
 .bi-github{

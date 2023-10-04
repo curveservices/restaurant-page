@@ -7,7 +7,7 @@ const createTabs = () => {
     const header = document.querySelector('#nav');
 
     const logo = document.createElement('img')
-    logo.src = 'file:///Users/paulrossiter/Documents/coding/repos/restaurant-page/assests/IMG_3505.PNG';
+    logo.src = './assets/IMG_3505.PNG';
     logo.setAttribute('id', 'logo');
     header.appendChild(logo);
     

@@ -17,7 +17,7 @@ const createRestaurantHomePage = () => {
 
     //create image & append
     const image = document.createElement('img');
-    image.src = 'file:///Users/paulrossiter/Documents/coding/repos/restaurant-page/assests/restaurant1.jpeg';
+    image.src = './assets/restaurant1.jpeg';
     image.height = '';
     image.classList.add('home-image')
     pageContent.appendChild(image);
