@@ -77,7 +77,6 @@ const createContactPage = () => {
     contactsListDaysp.textContent = 'Mon - Sat | 8am - 6pm';
     contactsListOpen.appendChild(contactsListDaysp)
 
-
 // create form
     const formContainer = document.createElement('div');
     formContainer.classList.add('form-container');
@@ -106,7 +105,6 @@ const createContactPage = () => {
     phoneInput.placeholder = 'Your phone number';
     phoneInput.classList.add('input');
     
-
     const submitButton = document.createElement('input');
     submitButton.setAttribute('id', 'submit');
     submitButton.classList.add('input');

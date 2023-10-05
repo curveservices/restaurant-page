@@ -85,7 +85,6 @@ const createMenuPage = () => {
     menuItem5.appendChild(copy5);
     menuItem5.appendChild(img5);
 
-
     pageContent.appendChild(heading);
     pageContent.appendChild(copy);
     pageContent.appendChild(menuList);
